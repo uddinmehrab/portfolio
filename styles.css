@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #001f3f, #000080);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}
+
+.subtext {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0077b5;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.linkedin-button:hover {
+    background-color: #005582;
+    transform: scale(1.05);
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.animated-text {
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
