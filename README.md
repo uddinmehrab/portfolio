@@ -1,2 +1,2 @@
-# portfolio
-Website for a personal portfolio.
+# Personal Portfolio
+Working repo for my personal portfolio. Deployed using Vercel.
