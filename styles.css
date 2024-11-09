@@ -1,3 +1,6 @@
+/* Import Open Sans or Comic Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap'); /* Replace with Comic Sans if desired */
+
 * {
     margin: 0;
     padding: 0;
@@ -76,6 +79,35 @@ h1 {
 .animated-text {
     animation: slideIn 1.5s ease-out;
 }
+
+.whisper-text {
+  font-size: 0.8rem; /* Slightly smaller text */
+  font-family: 'Open Sans', sans-serif; /* Use Open Sans */
+  color: #b3b3ff; /* Soft blue color */
+  margin-top: 20px; /* Adds space between the line and the button */
+  margin-bottom: 10px; /* Adds space from the header above */
+  text-align: center;
+}
+
+.whisper-text a {
+  color: #6a0dad; /* Purple color for link */
+  text-decoration: underline;
+}
+
+.whisper-text a:hover {
+  color: #3b82f6; /* Blue hover effect */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color:linear-gradient(135deg, #000000, #001f3f, #000080); /* Match your site’s color theme */
+    color: #f0f8ff; /* Light blue to match theme */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
 
 @keyframes slideIn {
     from {
