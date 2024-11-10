@@ -70,7 +70,16 @@
     </section><!-- /Hero Section -->
 
   </main>
+  <div id="beta-banner">
+    <p>This website is in beta. Things may change, and some information may not be accurate.</p>
+    <button onclick="dismissBanner()">✕</button>
+  </div>
 
+  <script>function dismissBanner() {
+    document.getElementById('beta-banner').style.display = 'none';
+    }
+    </script>
+    
   <footer id="footer" class="footer dark-background">
     <div class="container">
       <h3 class="sitename">Portfolio</h3>
